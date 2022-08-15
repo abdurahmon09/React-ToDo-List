@@ -1,0 +1,41 @@
+.app {
+    margin-top: 15px;
+    padding: 20px;
+    border: 1px solid #777;
+    box-shadow: 1px 4px 7px rgba(0, 0, 0, .5);
+    min-height: 60vh;
+}
+
+p {
+    margin: 0 !important;
+    font-weight: 500;
+}
+
+.remove-btn {
+  margin-right: 0.5rem;
+}
+
+.btn__poginatioin {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.item-enter {
+  opacity: 0;
+  transform: translateX(-350px);
+}
+.item-enter-active {
+  transform: translateX(0);
+  opacity: 1;
+  transition: 500ms;
+}
+.item-exit {
+  opacity: 1;
+}
+.item-exit-active {
+  opacity: 0;
+  transform: translateX(-350px);
+  transition: 500ms;
+}
